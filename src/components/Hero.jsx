@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { bigMacMeal, photos } from "../data/menu.js";
 import FoodImage from "./FoodImage.jsx";
+import Ticker from "./Ticker.jsx";
 
 export default function Hero({ onAdd }) {
   const [qty, setQty] = useState(1);
@@ -43,6 +44,9 @@ export default function Hero({ onAdd }) {
             <button className="btn btn-yellow" onClick={() => onAdd(bigMacMeal, qty)}>Add to Order</button>
           </div>
         </div>
+      </div>
+      <div className="hero-ticker">
+        <Ticker />
       </div>
     </section>
   );

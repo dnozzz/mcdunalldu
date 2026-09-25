@@ -10,7 +10,6 @@ import Hero from "./components/Hero.jsx";
 import MenuGrid from "./components/MenuGrid.jsx";
 import Rewards from "./components/Rewards.jsx";
 import Reveal from "./components/Reveal.jsx";
-import Ticker from "./components/Ticker.jsx";
 import Toast from "./components/Toast.jsx";
 // Leaflet is heavy — code-split the two map views so first paint stays fast test
 const StoreLocator = lazy(() => import("./components/StoreLocator.jsx"));
@@ -217,7 +216,6 @@ export default function App() {
         onOpenCart={openCart}
       />
       <Reveal><Hero onAdd={addToCart} /></Reveal>
-      <Ticker />
       <Reveal><AIPicker onAddMany={addMany} onToast={setToast} /></Reveal>
       <Reveal>
         <MenuGrid
