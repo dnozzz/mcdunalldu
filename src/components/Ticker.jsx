@@ -1,6 +1,7 @@
 import { memo } from "react";
 
 const items = [
+  "🛵 McDELIVERY",
   "🍟 WORLD FAMOUS FRIES",
   "🍗 CHICKEN McDO",
   "🍝 McSPAGHETTI",
@@ -8,7 +9,6 @@ const items = [
   "🍔 BURGER McDO",
   "🍦 McFLURRY OREO",
   "☕ McCAFÉ",
-  "🛵 McDELIVERY",
 ];
 
 function Ticker() {
